@@ -13,6 +13,7 @@
   <AddIn language="CLR" library="ArcMapByCommon.dll" namespace="ArcMapByCommon">
     <ArcMap>
       <Commands>
+        <Button id="cwgis_ArcMapByCommon_updateSubStrButton" class="updateSubStrButton" message="取子符串" caption="取子符串" tip="取子符串" category="ArcMapByCommon" image="SysImages\images\kml_line16.png" />
         <Button id="cwgis_ArcMapByCommon_GeoAreaComputeButton" class="GeoAreaComputeButton" message="打开图层图形面积计算" caption="打开图层图形面积计算" tip="打开图层图形面积计算" category="ArcMapByCommon" image="SysImages\images\coordinatesystem16.png" />
         <Button id="cwgis_ArcMapByCommon_ComputeXZDWMJTKMJByJBNTButton" class="ComputeXZDWMJTKMJByJBNTButton" message="基本农田反算线状地物和田坎面积功能" caption="基本农田反算线状地物和田坎面积功能" tip="基本农田反算线状地物和田坎面积功能" category="ArcMapByCommon" image="SysImages\images\cadastralcreateconnection16.png" />
         <Button id="cwgis_ArcMapByCommon_updateKCDLXS" class="updateKCDLXSButton" message="计算扣除地类系数值（或面积值）" caption="计算扣除地类系数值（或面积值）" tip="计算扣除地类系数值（或面积值）" category="ArcMapByCommon" image="SysImages\images\editingselectedgeodatabase16.png" />
@@ -42,7 +43,8 @@
       </Editor>
       <Toolbars>
         <Toolbar id="cwgis_esriAddInforArcMap_cwgisToolbar" caption="ArcMapByCommon" showInitially="true">
-          <Items>            
+          <Items>
+            <Button refID="cwgis_ArcMapByCommon_updateSubStrButton" />
             <Button refID="cwgis_ArcMapByCommon_ComputeXZDWMJTKMJByJBNTButton" />
             <Button refID="cwgis_ArcMapByCommon_updateKCDLXS" />
             <Button refID="cwgis_ArcMapByCommon_Button1" />

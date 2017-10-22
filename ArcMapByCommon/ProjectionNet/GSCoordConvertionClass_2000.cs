@@ -89,7 +89,7 @@ namespace ArcMapByCommon
             decimal FB1 = 0.0M;
             decimal a0 = a * (1 - e2);
             decimal delta = Math.Abs(Bf - B0);
-            while (delta > 4.8E-11M)   //0.000000000048M
+            while (delta > 1.0E-11M)   //0.00000000001M
             {
                 Bf = B0;
                 FB = a0 * (A1 * Bf - B1 * sin(2 * Bf) + C1 * sin(4 * Bf) - D1 * sin(6 * Bf) + E1 * sin(8 * Bf) - F1 * sin(10 * Bf) + G1 * sin(12 * Bf));

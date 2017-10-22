@@ -305,6 +305,13 @@
     </Compile>
     <Compile Include="updateFieldAddZeroPrexButton.cs" />
     <Compile Include="UpdateKCDLXS\updateKCDLXSButton.cs" />
+    <Compile Include="UpdateSubStrEx\frmUpdateSubStrUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSubStrEx\frmUpdateSubStrUI.Designer.cs">
+      <DependentUpon>frmUpdateSubStrUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSubStrEx\updateSubStrButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <AddInContent Include="Config.esriaddinx">
@@ -5312,6 +5319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateKCDLXS\frmUpdateKCDLXS.resx">
       <DependentUpon>frmUpdateKCDLXS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSubStrEx\frmUpdateSubStrUI.resx">
+      <DependentUpon>frmUpdateSubStrUI.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
