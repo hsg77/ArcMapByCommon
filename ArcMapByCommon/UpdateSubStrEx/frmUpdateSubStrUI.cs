@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Geodatabase;
 
-namespace ArcMapByCommon.UpdateSubStrEx
+namespace ArcMapByCommon
 {
     public partial class frmUpdateSubStrUI : Form
     {

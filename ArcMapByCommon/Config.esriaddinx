@@ -5,7 +5,7 @@
   <Version>1.0</Version>
   <Image>Images\ArcMapByCommon.png</Image>
   <Author>hsg</Author>
-  <Company></Company>
+  <Company>cwgis</Company>
   <Date>2017/3/19</Date>
   <Targets>
     <Target name="Desktop" version="10.0" />

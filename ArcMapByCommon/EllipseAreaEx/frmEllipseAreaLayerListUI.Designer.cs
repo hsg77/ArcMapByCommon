@@ -33,27 +33,27 @@ namespace ArcMapByCommon
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rb_beijing54 = new System.Windows.Forms.RadioButton();
+            this.rb_xian80 = new System.Windows.Forms.RadioButton();
+            this.rb2000 = new System.Windows.Forms.RadioButton();
             this.CB_FD = new System.Windows.Forms.CheckBox();
             this.CB_IsBigNumber = new System.Windows.Forms.CheckBox();
             this.txt_DD = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.Btn_Compute = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.CB_Fields = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Btn_addEllipField = new System.Windows.Forms.Button();
-            this.rb2000 = new System.Windows.Forms.RadioButton();
-            this.rb_xian80 = new System.Windows.Forms.RadioButton();
-            this.rb_beijing54 = new System.Windows.Forms.RadioButton();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 18);
+            this.label1.Location = new System.Drawing.Point(20, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 12);
             this.label1.TabIndex = 12;
@@ -84,19 +84,37 @@ namespace ArcMapByCommon
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "坐标系";
             // 
-            // button1
+            // rb_beijing54
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button1.Location = new System.Drawing.Point(28, 409);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 25);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "开始计算图形面积";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.rb_beijing54.AutoSize = true;
+            this.rb_beijing54.Location = new System.Drawing.Point(251, 19);
+            this.rb_beijing54.Name = "rb_beijing54";
+            this.rb_beijing54.Size = new System.Drawing.Size(95, 16);
+            this.rb_beijing54.TabIndex = 25;
+            this.rb_beijing54.Text = "北京54坐标系";
+            this.rb_beijing54.UseVisualStyleBackColor = true;
+            // 
+            // rb_xian80
+            // 
+            this.rb_xian80.AutoSize = true;
+            this.rb_xian80.Location = new System.Drawing.Point(120, 19);
+            this.rb_xian80.Name = "rb_xian80";
+            this.rb_xian80.Size = new System.Drawing.Size(95, 16);
+            this.rb_xian80.TabIndex = 11;
+            this.rb_xian80.Text = "西安80坐标系";
+            this.rb_xian80.UseVisualStyleBackColor = true;
+            // 
+            // rb2000
+            // 
+            this.rb2000.AutoSize = true;
+            this.rb2000.Checked = true;
+            this.rb2000.Location = new System.Drawing.Point(14, 19);
+            this.rb2000.Name = "rb2000";
+            this.rb2000.Size = new System.Drawing.Size(83, 16);
+            this.rb2000.TabIndex = 10;
+            this.rb2000.TabStop = true;
+            this.rb2000.Text = "2000坐标系";
+            this.rb2000.UseVisualStyleBackColor = true;
             // 
             // CB_FD
             // 
@@ -139,6 +157,20 @@ namespace ArcMapByCommon
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 8;
             this.label2.Text = "度数";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.button1.Location = new System.Drawing.Point(28, 409);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 25);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "开始计算图形面积";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Btn_Compute
             // 
@@ -184,7 +216,7 @@ namespace ArcMapByCommon
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 78);
+            this.label4.Location = new System.Drawing.Point(12, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 12);
             this.label4.TabIndex = 22;
@@ -203,38 +235,6 @@ namespace ArcMapByCommon
             this.Btn_addEllipField.Text = "添加椭球面积字段(TQMJ)";
             this.Btn_addEllipField.UseVisualStyleBackColor = true;
             this.Btn_addEllipField.Click += new System.EventHandler(this.Btn_addEllipField_Click);
-            // 
-            // rb2000
-            // 
-            this.rb2000.AutoSize = true;
-            this.rb2000.Checked = true;
-            this.rb2000.Location = new System.Drawing.Point(14, 19);
-            this.rb2000.Name = "rb2000";
-            this.rb2000.Size = new System.Drawing.Size(83, 16);
-            this.rb2000.TabIndex = 10;
-            this.rb2000.TabStop = true;
-            this.rb2000.Text = "2000坐标系";
-            this.rb2000.UseVisualStyleBackColor = true;
-            // 
-            // rb_xian80
-            // 
-            this.rb_xian80.AutoSize = true;
-            this.rb_xian80.Location = new System.Drawing.Point(120, 19);
-            this.rb_xian80.Name = "rb_xian80";
-            this.rb_xian80.Size = new System.Drawing.Size(95, 16);
-            this.rb_xian80.TabIndex = 11;
-            this.rb_xian80.Text = "西安80坐标系";
-            this.rb_xian80.UseVisualStyleBackColor = true;
-            // 
-            // rb_beijing54
-            // 
-            this.rb_beijing54.AutoSize = true;
-            this.rb_beijing54.Location = new System.Drawing.Point(251, 19);
-            this.rb_beijing54.Name = "rb_beijing54";
-            this.rb_beijing54.Size = new System.Drawing.Size(95, 16);
-            this.rb_beijing54.TabIndex = 25;
-            this.rb_beijing54.Text = "北京54坐标系";
-            this.rb_beijing54.UseVisualStyleBackColor = true;
             // 
             // frmEllipseAreaLayerListUI
             // 

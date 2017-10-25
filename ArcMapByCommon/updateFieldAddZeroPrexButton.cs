@@ -26,7 +26,8 @@ namespace ArcMapByCommon
                 {
                     ui = new frmUpdateFieldAddZeroPrexUI();
                 }
-                ui.Show();
+                Control m = Form.FromHandle(new IntPtr(ArcMap.Application.hWnd));
+                ui.Show(m);
             }
             catch (Exception ee)
             {

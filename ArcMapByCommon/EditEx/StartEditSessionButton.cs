@@ -25,7 +25,8 @@ namespace ArcMapByCommon
                 {
                     ui = new frmStartEditSessionUI();
                 }
-                ui.Show();
+                Control m = Form.FromHandle(new IntPtr(ArcMap.Application.hWnd));
+                ui.Show(m);
             }
             catch (Exception ee)
             {

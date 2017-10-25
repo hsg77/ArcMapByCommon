@@ -76,9 +76,9 @@
             // 
             // Btn_Start
             // 
-            this.Btn_Start.Location = new System.Drawing.Point(298, 287);
+            this.Btn_Start.Location = new System.Drawing.Point(280, 287);
             this.Btn_Start.Name = "Btn_Start";
-            this.Btn_Start.Size = new System.Drawing.Size(61, 28);
+            this.Btn_Start.Size = new System.Drawing.Size(79, 28);
             this.Btn_Start.TabIndex = 4;
             this.Btn_Start.Text = "开始编辑";
             this.Btn_Start.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@
             // 
             // Btn_Close
             // 
-            this.Btn_Close.Location = new System.Drawing.Point(380, 289);
+            this.Btn_Close.Location = new System.Drawing.Point(365, 289);
             this.Btn_Close.Name = "Btn_Close";
-            this.Btn_Close.Size = new System.Drawing.Size(61, 25);
+            this.Btn_Close.Size = new System.Drawing.Size(76, 25);
             this.Btn_Close.TabIndex = 5;
             this.Btn_Close.Text = "关闭";
             this.Btn_Close.UseVisualStyleBackColor = true;

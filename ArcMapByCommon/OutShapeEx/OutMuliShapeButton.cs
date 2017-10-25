@@ -15,8 +15,10 @@ namespace ArcMapByCommon
         {
             try
             {
-                frmOutMuliShapeUI ui = new frmOutMuliShapeUI();               
-                ui.Show();
+                frmOutMuliShapeUI ui = new frmOutMuliShapeUI();
+                //
+                Control m = Form.FromHandle(new IntPtr(ArcMap.Application.hWnd));
+                ui.Show(m);
             }
             catch (Exception ee)
             {               

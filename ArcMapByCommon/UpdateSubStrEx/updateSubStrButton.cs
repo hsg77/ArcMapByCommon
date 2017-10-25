@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ArcMapByCommon.UpdateSubStrEx
+namespace ArcMapByCommon
 {
     public class updateSubStrButton : ESRI.ArcGIS.Desktop.AddIns.Button
     {
@@ -25,7 +25,8 @@ namespace ArcMapByCommon.UpdateSubStrEx
                 {
                     ui = new frmUpdateSubStrUI();
                 }
-                ui.Show();
+                Control  m=Form.FromHandle(new IntPtr(ArcMap.Application.hWnd));
+                ui.Show(m);
             }
             catch (Exception ee)
             {

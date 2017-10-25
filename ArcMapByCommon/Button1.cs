@@ -27,7 +27,8 @@ namespace ArcMapByCommon
                 {
                     ui = new frmUpdateBHIndexUI();
                 }
-                ui.Show();
+                Control m = Form.FromHandle(new IntPtr(ArcMap.Application.hWnd));
+                ui.Show(m);
             }
             catch (Exception ee)
             {

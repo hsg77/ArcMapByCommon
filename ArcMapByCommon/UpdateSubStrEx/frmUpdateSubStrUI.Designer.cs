@@ -1,4 +1,4 @@
-﻿namespace ArcMapByCommon.UpdateSubStrEx
+﻿namespace ArcMapByCommon
 {
     partial class frmUpdateSubStrUI
     {
@@ -188,7 +188,8 @@
             this.Name = "frmUpdateSubStrUI";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "frmUpdateSubStrUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "取子字符串功能";
             this.Load += new System.EventHandler(this.frmUpdateSubStrUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fd_indexFrom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fd_indexTo)).EndInit();

@@ -12,7 +12,9 @@ namespace ArcMapByCommon
             try
             {
                 frmOutMuliShapeBySelectedGeometryUI ui = new frmOutMuliShapeBySelectedGeometryUI();
-                ui.Show(ArcMap.Application as Form);
+                //
+                Control m = Form.FromHandle(new IntPtr(ArcMap.Application.hWnd));
+                ui.Show(m);
             }
             catch (Exception ee)
             {
