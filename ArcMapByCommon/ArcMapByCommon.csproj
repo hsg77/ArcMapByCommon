@@ -262,6 +262,20 @@
     <Compile Include="OutShapeEx\OutShapeClass.cs" />
     <Compile Include="OutShapeEx\OutShapeButton.cs" />
     <Compile Include="OutShapeEx\ShapeInfoConfig.cs" />
+    <Compile Include="Pads\DockableWindow1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pads\DockableWindow1.Designer.cs">
+      <DependentUpon>DockableWindow1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pads\ShowPadButton.cs" />
+    <Compile Include="Pads\XZQPad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pads\XZQPad.Designer.cs">
+      <DependentUpon>XZQPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pads\XZQPadCommand.cs" />
     <Compile Include="PrintEx\ExportActiveViewCS_Net.cs" />
     <Compile Include="ProjectionGIS\AbsTFClass.cs" />
     <Compile Include="ProjectionGIS\AbstractEllipseAreaCompute.cs" />
@@ -381,12 +395,6 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DockableWindow1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DockableWindow1.Designer.cs">
-      <DependentUpon>DockableWindow1.cs</DependentUpon>
-    </Compile>
     <AddInContent Include="Images\DockableWindow1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -5338,6 +5346,12 @@
     <EmbeddedResource Include="OutShapeEx\frmOutShapeUI.resx">
       <DependentUpon>frmOutShapeUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pads\DockableWindow1.resx">
+      <DependentUpon>DockableWindow1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pads\XZQPad.resx">
+      <DependentUpon>XZQPad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Scan2DEx\frmScan2DRenameJpgFileUI.resx">
       <DependentUpon>frmScan2DRenameJpgFileUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -5367,6 +5381,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="city.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Pads\XZQPadCommand.bmp" />
     <Content Include="readme.txt" />
   </ItemGroup>
   <PropertyGroup>

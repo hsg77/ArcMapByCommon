@@ -11,11 +11,11 @@
     <Target name="Desktop" version="10.0" />
   </Targets>
   <AddIn language="CLR" library="ArcMapByCommon.dll" namespace="ArcMapByCommon">
-    <ArcMap>
+    <ArcMap>      
       <Commands>
+        <Button id="cwgis_ArcMapByCommon_ShowPadButton" class="ShowPadButton" message="显示面板功能" caption="显示面板功能" tip="显示面板功能" category="ArcMapByCommon" image="SysImages\images\application.png" />
         <Button id="cwgis_ArcMapByCommon_Scan2DRenameJpgButton" class="Scan2DRenameJpgButton" message="扫描二维码更名功能" caption="扫描二维码更名功能" tip="扫描二维码更名功能" category="ArcMapByCommon" image="SysImages\images\animationcreateflybyfrompath16.png" />
         <Button id="cwgis_ArcMapByCommon_ScanUnionOneJpgButton" class="ScanUnionOneJpgButton" message="合并成一张jpg文件" caption="合并成一张jpg文件" tip="合并成一张jpg文件" category="ArcMapByCommon" image="SysImages\images\editingsplitpolygons16.png" />
-
         <Button id="cwgis_ArcMapByCommon_updateSubStrButton" class="updateSubStrButton" message="取子符串" caption="取子符串" tip="取子符串" category="ArcMapByCommon" image="SysImages\images\kml_line16.png" />
         <Button id="cwgis_ArcMapByCommon_GeoAreaComputeButton" class="GeoAreaComputeButton" message="打开图层图形面积计算" caption="打开图层图形面积计算" tip="打开图层图形面积计算" category="ArcMapByCommon" image="SysImages\images\coordinatesystem16.png" />
         <Button id="cwgis_ArcMapByCommon_ComputeXZDWMJTKMJByJBNTButton" class="ComputeXZDWMJTKMJByJBNTButton" message="基本农田反算线状地物和田坎面积功能" caption="基本农田反算线状地物和田坎面积功能" tip="基本农田反算线状地物和田坎面积功能" category="ArcMapByCommon" image="SysImages\images\cadastralcreateconnection16.png" />
@@ -38,6 +38,9 @@
         <DockableWindow id="cwgis_ArcMapByCommon_DockableWindow1" class="DockableWindow1+AddinImpl" caption="My Dockable Window" image="Images\DockableWindow1.png">
           <InitialPlacement height="300" width="300" state="pinned" position="left" />
         </DockableWindow>
+        <DockableWindow id="cwgis_ArcMapByCommon_XZQPad" class="XZQPad" caption="行政区地标" image="Images\DockableWindow1.png">
+          <InitialPlacement height="300" width="300" state="pinned" position="left" />
+        </DockableWindow>
       </DockableWindows>
       <Editor>
         <Extensions>
@@ -47,6 +50,7 @@
       <Toolbars>
         <Toolbar id="cwgis_esriAddInforArcMap_cwgisToolbar" caption="ArcMapByCommon" showInitially="true">
           <Items>            
+            <Button refID="cwgis_ArcMapByCommon_ShowPadButton" />
             <Button refID="cwgis_ArcMapByCommon_Scan2DRenameJpgButton" />
             <Button refID="cwgis_ArcMapByCommon_ScanUnionOneJpgButton" />
             <Button refID="cwgis_ArcMapByCommon_updateSubStrButton" />
