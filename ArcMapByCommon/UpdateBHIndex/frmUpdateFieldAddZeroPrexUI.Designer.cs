@@ -36,11 +36,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.fd_totalWidth = new System.Windows.Forms.TextBox();
+            this.cb_IsPreAdd0 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(313, 112);
+            this.button2.Location = new System.Drawing.Point(313, 140);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 34);
             this.button2.TabIndex = 11;
@@ -50,7 +51,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(193, 112);
+            this.btnUpdate.Location = new System.Drawing.Point(193, 140);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(92, 34);
             this.btnUpdate.TabIndex = 10;
@@ -98,7 +99,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 123);
+            this.label3.Location = new System.Drawing.Point(22, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 12;
@@ -106,17 +107,30 @@
             // 
             // fd_totalWidth
             // 
-            this.fd_totalWidth.Location = new System.Drawing.Point(77, 120);
+            this.fd_totalWidth.Location = new System.Drawing.Point(77, 100);
             this.fd_totalWidth.Name = "fd_totalWidth";
             this.fd_totalWidth.Size = new System.Drawing.Size(56, 21);
             this.fd_totalWidth.TabIndex = 13;
             this.fd_totalWidth.Text = "2";
             // 
+            // cb_IsPreAdd0
+            // 
+            this.cb_IsPreAdd0.AutoSize = true;
+            this.cb_IsPreAdd0.Checked = true;
+            this.cb_IsPreAdd0.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_IsPreAdd0.Location = new System.Drawing.Point(193, 103);
+            this.cb_IsPreAdd0.Name = "cb_IsPreAdd0";
+            this.cb_IsPreAdd0.Size = new System.Drawing.Size(126, 16);
+            this.cb_IsPreAdd0.TabIndex = 14;
+            this.cb_IsPreAdd0.Text = "位数不够，向前补0";
+            this.cb_IsPreAdd0.UseVisualStyleBackColor = true;
+            // 
             // frmUpdateFieldAddZeroPrexUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 167);
+            this.ClientSize = new System.Drawing.Size(423, 193);
+            this.Controls.Add(this.cb_IsPreAdd0);
             this.Controls.Add(this.fd_totalWidth);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
@@ -144,5 +158,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox fd_totalWidth;
+        private System.Windows.Forms.CheckBox cb_IsPreAdd0;
     }
 }

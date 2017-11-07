@@ -7,10 +7,10 @@ using System.Windows.Forms;
 
 namespace ArcMapByCommon
 {
-    public class Button1 : ESRI.ArcGIS.Desktop.AddIns.Button
+    public class BHIndexButton : ESRI.ArcGIS.Desktop.AddIns.Button
     {
         private frmUpdateBHIndexUI ui = null;
-        public Button1()
+        public BHIndexButton()
         {
         }
 

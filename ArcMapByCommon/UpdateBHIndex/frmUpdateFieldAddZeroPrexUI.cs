@@ -140,7 +140,14 @@ namespace ArcMapByCommon.UpdateBHIndex
                         if (v != null)
                         {
                             string prex = v.ToString();
-                            prex = prex.PadLeft(totalWidth, '0');
+                            if (cb_IsPreAdd0.Checked == true)
+                            {   //是向前补0     10->00010
+                                prex = prex.PadLeft(totalWidth, '0');
+                            }
+                            else
+                            {   //是向后补0     10->10000
+                                prex = prex.PadRight(totalWidth, '0');
+                            }
                             pf.set_Value(index, prex);
                             pcursor.UpdateFeature(pf);
                             //

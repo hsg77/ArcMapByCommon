@@ -65,9 +65,9 @@ namespace ArcMapByCommon
         private void button1_Click(object sender, EventArgs e)
         {
             //D:\ArcGIS\Desktop10.0\Bin\
-            MessageBox.Show(AppDomain.CurrentDomain.BaseDirectory);
-            
-            MessageBox.Show(AppDomain.CurrentDomain.DynamicDirectory);
+            MessageBox.Show("AppDomain.CurrentDomain.BaseDirectory="+AppDomain.CurrentDomain.BaseDirectory);
+
+            MessageBox.Show("Application.StartupPath="+Application.StartupPath);
         }
     }
 }

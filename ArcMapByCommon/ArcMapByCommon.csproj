@@ -347,7 +347,7 @@
     <Compile Include="UpdateKCDLXS\frmUpdateKCDLXS.Designer.cs">
       <DependentUpon>frmUpdateKCDLXS.cs</DependentUpon>
     </Compile>
-    <Compile Include="updateFieldAddZeroPrexButton.cs" />
+    <Compile Include="UpdateBHIndex\updateFieldAddZeroPrexButton.cs" />
     <Compile Include="UpdateKCDLXS\updateKCDLXSButton.cs" />
     <Compile Include="UpdateSubStrEx\frmUpdateSubStrUI.cs">
       <SubType>Form</SubType>
@@ -368,7 +368,7 @@
     <AddInContent Include="Images\ArcMapByCommon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Button1.cs" />
+    <Compile Include="UpdateBHIndex\BHIndexButton.cs" />
     <AddInContent Include="Images\Button1.png" />
   </ItemGroup>
   <ItemGroup>

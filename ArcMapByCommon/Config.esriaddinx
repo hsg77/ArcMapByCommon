@@ -20,7 +20,7 @@
         <Button id="cwgis_ArcMapByCommon_GeoAreaComputeButton" class="GeoAreaComputeButton" message="打开图层图形面积计算" caption="打开图层图形面积计算" tip="打开图层图形面积计算" category="ArcMapByCommon" image="SysImages\images\coordinatesystem16.png" />
         <Button id="cwgis_ArcMapByCommon_ComputeXZDWMJTKMJByJBNTButton" class="ComputeXZDWMJTKMJByJBNTButton" message="基本农田反算线状地物和田坎面积功能" caption="基本农田反算线状地物和田坎面积功能" tip="基本农田反算线状地物和田坎面积功能" category="ArcMapByCommon" image="SysImages\images\cadastralcreateconnection16.png" />
         <Button id="cwgis_ArcMapByCommon_updateKCDLXS" class="updateKCDLXSButton" message="计算扣除地类系数值（或面积值）" caption="计算扣除地类系数值（或面积值）" tip="计算扣除地类系数值（或面积值）" category="ArcMapByCommon" image="SysImages\images\editingselectedgeodatabase16.png" />
-        <Button id="cwgis_ArcMapByCommon_Button1" class="Button1" message="更新编号index" caption="更新编号index" tip="更新编号index" category="ArcMapByCommon" image="SysImages\images\cadastralparcelnamer32.png" />
+        <Button id="cwgis_ArcMapByCommon_BHIndexButton" class="BHIndexButton" message="更新编号index" caption="更新编号index" tip="更新编号index" category="ArcMapByCommon" image="SysImages\images\cadastralparcelnamer32.png" />
         <Button id="cwgis_ArcMapByCommon_updateFieldAddZeroPrex" class="updateFieldAddZeroPrexButton" message="自动补零前缀长度" caption="自动补零前缀长度" tip="自动补零前缀长度" category="ArcMapByCommon" image="SysImages\images\bookmarkcreate16.png" />
         <Button id="cwgis_ArcMapByCommon_OutShapeButton" class="OutShapeButton" message="输出shp文件" caption="输出shp文件" tip="输出shp文件" category="ArcMapByCommon" image="SysImages\images\editinglayerfieldorder16.png" />
         <Button id="cwgis_ArcMapByCommon_OutMuliShapeButton" class="OutMuliShapeButton" message="批量输出shp文件" caption="批量输出shp文件" tip="批量输出shp文件" category="ArcMapByCommon" image="SysImages\images\dataframe16.png" />
@@ -36,10 +36,10 @@
       </Commands>
       <DockableWindows>
         <DockableWindow id="cwgis_ArcMapByCommon_DockableWindow1" class="DockableWindow1+AddinImpl" caption="面板1" image="Images\DockableWindow1.png">
-          <InitialPlacement height="300" width="300" state="pinned" position="left" />
+          <InitialPlacement height="300" width="300" state="pinned" position="group" />
         </DockableWindow>
         <DockableWindow id="cwgis_ArcMapByCommon_XZQPad" class="XZQPad+AddinImpl" caption="行政区地标" image="Images\DockableWindow1.png">
-          <InitialPlacement height="300" width="300" state="pinned" position="left" />
+          <InitialPlacement height="300" width="300" state="pinned" position="group" />
         </DockableWindow>
       </DockableWindows>
       <Editor>
@@ -56,7 +56,7 @@
             <Button refID="cwgis_ArcMapByCommon_updateSubStrButton" />
             <Button refID="cwgis_ArcMapByCommon_ComputeXZDWMJTKMJByJBNTButton" />
             <Button refID="cwgis_ArcMapByCommon_updateKCDLXS" />
-            <Button refID="cwgis_ArcMapByCommon_Button1" />
+            <Button refID="cwgis_ArcMapByCommon_BHIndexButton" />
             <Button refID="cwgis_ArcMapByCommon_updateFieldAddZeroPrex" />            
             <Button refID="cwgis_ArcMapByCommon_OutShapeButton" />
             <Button refID="cwgis_ArcMapByCommon_OutMuliShapeButton" />
