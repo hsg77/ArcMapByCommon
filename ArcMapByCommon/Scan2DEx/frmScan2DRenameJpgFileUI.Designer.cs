@@ -104,7 +104,7 @@ namespace ArcMapByCommon
             // 
             this.labelControl5.Location = new System.Drawing.Point(12, 100);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(318, 14);
+            this.labelControl5.Size = new System.Drawing.Size(365, 14);
             this.labelControl5.TabIndex = 31;
             this.labelControl5.Tag = " ";
             this.labelControl5.Text = "XX县保护卡数据/乡镇1/XXX村/保护卡签章后扫描的文件.jpg";
@@ -121,14 +121,14 @@ namespace ArcMapByCommon
             // 
             this.labelControl2.Location = new System.Drawing.Point(12, 125);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(365, 14);
+            this.labelControl2.Size = new System.Drawing.Size(390, 14);
             this.labelControl2.TabIndex = 32;
             this.labelControl2.Tag = " ";
             this.labelControl2.Text = "XX县保护卡数据/乡镇1/XXX村/yyy社组/保护卡签章后扫描的文件.jpg";
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(393, 100);
+            this.labelControl6.Location = new System.Drawing.Point(408, 100);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(132, 14);
             this.labelControl6.TabIndex = 33;
@@ -136,7 +136,7 @@ namespace ArcMapByCommon
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(393, 125);
+            this.labelControl8.Location = new System.Drawing.Point(408, 125);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(132, 14);
             this.labelControl8.TabIndex = 34;

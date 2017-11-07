@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using ESRI.ArcGIS.esriSystem;
 using ESRI.ArcGIS.Framework;
+using System.Windows.Forms;
 
 namespace ArcMapByCommon
 {
@@ -14,12 +15,20 @@ namespace ArcMapByCommon
 
         protected override void OnClick()
         {
-            //Get dockable window
-            UID dockWinID = new UIDClass();
-            dockWinID.Value = ThisAddIn.IDs.DockableWindow1;
-            IDockableWindow s_dockWindow = ArcMap.DockableWindowManager.GetDockableWindow(dockWinID);
-            s_dockWindow.Dock(esriDockFlags.esriDockRight);
-            s_dockWindow.Show(true);
+            try
+            {
+                //Get dockable window
+                UID dockWinID = new UIDClass();
+                dockWinID.Value = ThisAddIn.IDs.DockableWindow1;
+                IDockableWindow s_dockWindow = ArcMap.DockableWindowManager.GetDockableWindow(dockWinID);
+                s_dockWindow.Caption = "面板1";
+                s_dockWindow.Dock(esriDockFlags.esriDockTabbed);
+                s_dockWindow.Show(true);
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show(ee.Message + " " + ee.StackTrace);
+            }
         }
         protected override void OnUpdate()
         {

@@ -53,7 +53,7 @@ namespace ArcMapByCommon
             // 
             this.labelControl6.Location = new System.Drawing.Point(27, 139);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(328, 14);
+            this.labelControl6.Size = new System.Drawing.Size(375, 14);
             this.labelControl6.TabIndex = 16;
             this.labelControl6.Text = "XX县保护卡数据/乡镇1/XXX村/姓名(身份证号)位置示意图.jpg";
             // 
@@ -61,7 +61,7 @@ namespace ArcMapByCommon
             // 
             this.labelControl5.Location = new System.Drawing.Point(28, 116);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(268, 14);
+            this.labelControl5.Size = new System.Drawing.Size(315, 14);
             this.labelControl5.TabIndex = 15;
             this.labelControl5.Tag = " ";
             this.labelControl5.Text = "XX县保护卡数据/乡镇1/XXX村/姓名(身份证号).jpg";
@@ -173,7 +173,7 @@ namespace ArcMapByCommon
             // 
             this.labelControl10.Location = new System.Drawing.Point(27, 193);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(375, 14);
+            this.labelControl10.Size = new System.Drawing.Size(402, 14);
             this.labelControl10.TabIndex = 38;
             this.labelControl10.Text = "XX县保护卡数据/乡镇1/XXX村/yyy社组/姓名(身份证号)位置示意图.jpg";
             // 
@@ -181,7 +181,7 @@ namespace ArcMapByCommon
             // 
             this.labelControl11.Location = new System.Drawing.Point(28, 170);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(315, 14);
+            this.labelControl11.Size = new System.Drawing.Size(363, 14);
             this.labelControl11.TabIndex = 37;
             this.labelControl11.Tag = " ";
             this.labelControl11.Text = "XX县保护卡数据/乡镇1/XXX村/yyy社组/姓名(身份证号).jpg";

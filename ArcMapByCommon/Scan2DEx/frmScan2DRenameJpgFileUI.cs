@@ -298,11 +298,32 @@ namespace ArcMapByCommon
                         {
                             File.Copy(inbhk_jpgPath, outFileName);
                         }
+                        else
+                        {   
+                            int relIndex = 1;                            
+                            outFileName = Path.Combine(outCunDir, "A1_"+newname + Path.GetExtension(inbhk_jpgPath));
+                            while (System.IO.File.Exists(outFileName) == true)
+                            {
+                                relIndex += 1;
+                                outFileName = Path.Combine(outCunDir, "A"+relIndex+"_" + newname + Path.GetExtension(inbhk_jpgPath));
+                            }
+                            File.Copy(inbhk_jpgPath, outFileName);
+                        }
                     }
                     else
                     {
                         ScanErrorCount += 1;
                         Log.WriteLine(string.Format("文件{0}扫描识别失败", qfile.Path));
+                        //==============================
+                        int relIndex = 1;
+                        string outFileName = Path.Combine(outCunDir, "B1_" + Path.GetFileName(inbhk_jpgPath));
+                        while (System.IO.File.Exists(outFileName) == true)
+                        {
+                            relIndex += 1;
+                            outFileName = Path.Combine(outCunDir, "B" + relIndex + "_" + Path.GetFileName(inbhk_jpgPath));
+                        }
+                        File.Copy(inbhk_jpgPath, outFileName);
+                        //==============================
                     }
                     //
                 }
@@ -310,6 +331,16 @@ namespace ArcMapByCommon
                 {
                     ScanErrorCount += 1;
                     Log.WriteLine(string.Format("文件{0}扫描识别失败", qfile.Path));
+                    //==============================
+                    int relIndex = 1;
+                    string outFileName = Path.Combine(outCunDir, "B1_" + Path.GetFileName(inbhk_jpgPath));
+                    while (System.IO.File.Exists(outFileName) == true)
+                    {
+                        relIndex += 1;
+                        outFileName = Path.Combine(outCunDir, "B" + relIndex + "_" + Path.GetFileName(inbhk_jpgPath));
+                    }
+                    File.Copy(inbhk_jpgPath, outFileName);
+                    //==============================
                 }
             }
             catch (Exception ex)
