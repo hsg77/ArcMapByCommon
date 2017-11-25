@@ -341,6 +341,13 @@
     <Compile Include="UpdateBHIndex\frmUpdateFieldAddZeroPrexUI.Designer.cs">
       <DependentUpon>frmUpdateFieldAddZeroPrexUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateBsmBatch\frmUpdateBsmBatchUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBsmBatch\frmUpdateBsmBatchUI.Designer.cs">
+      <DependentUpon>frmUpdateBsmBatchUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBsmBatch\UpdateBsmBatchButton.cs" />
     <Compile Include="UpdateKCDLXS\frmUpdateKCDLXS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -356,6 +363,13 @@
       <DependentUpon>frmUpdateSubStrUI.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateSubStrEx\updateSubStrButton.cs" />
+    <Compile Include="UpdateYsdmBatch\frmUpdateYsdmBatchUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateYsdmBatch\frmUpdateYsdmBatchUI.Designer.cs">
+      <DependentUpon>frmUpdateYsdmBatchUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateYsdmBatch\UpdateYsdmBatchButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <AddInContent Include="Config.esriaddinx">
@@ -5373,15 +5387,24 @@
     <EmbeddedResource Include="UpdateBHIndex\frmUpdateFieldAddZeroPrexUI.resx">
       <DependentUpon>frmUpdateFieldAddZeroPrexUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBsmBatch\frmUpdateBsmBatchUI.resx">
+      <DependentUpon>frmUpdateBsmBatchUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateKCDLXS\frmUpdateKCDLXS.resx">
       <DependentUpon>frmUpdateKCDLXS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateSubStrEx\frmUpdateSubStrUI.resx">
       <DependentUpon>frmUpdateSubStrUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateYsdmBatch\frmUpdateYsdmBatchUI.resx">
+      <DependentUpon>frmUpdateYsdmBatchUI.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="city.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigYSDM\要素代码YSDM%28两区标准图层20171031版本%29.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <Content Include="Pads\XZQPadCommand.bmp" />

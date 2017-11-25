@@ -20,6 +20,8 @@
         <Button id="cwgis_ArcMapByCommon_GeoAreaComputeButton" class="GeoAreaComputeButton" message="打开图层图形面积计算" caption="打开图层图形面积计算" tip="打开图层图形面积计算" category="ArcMapByCommon" image="SysImages\images\coordinatesystem16.png" />
         <Button id="cwgis_ArcMapByCommon_ComputeXZDWMJTKMJByJBNTButton" class="ComputeXZDWMJTKMJByJBNTButton" message="基本农田反算线状地物和田坎面积功能" caption="基本农田反算线状地物和田坎面积功能" tip="基本农田反算线状地物和田坎面积功能" category="ArcMapByCommon" image="SysImages\images\cadastralcreateconnection16.png" />
         <Button id="cwgis_ArcMapByCommon_updateKCDLXS" class="updateKCDLXSButton" message="计算扣除地类系数值（或面积值）" caption="计算扣除地类系数值（或面积值）" tip="计算扣除地类系数值（或面积值）" category="ArcMapByCommon" image="SysImages\images\editingselectedgeodatabase16.png" />
+        <Button id="cwgis_ArcMapByCommon_UpdateYsdmBatchButton" class="UpdateYsdmBatchButton" message="批量更新YSDM" caption="批量更新YSDM" tip="批量更新YSDM" category="ArcMapByCommon" image="SysImages\images\money_yen.png" />
+        <Button id="cwgis_ArcMapByCommon_UpdateBsmBatchButton" class="UpdateBsmBatchButton" message="批量更新BSM" caption="批量更新BSM" tip="批量更新BSM" category="ArcMapByCommon" image="SysImages\images\cadastralparcelnamer32.png" />
         <Button id="cwgis_ArcMapByCommon_BHIndexButton" class="BHIndexButton" message="更新编号index" caption="更新编号index" tip="更新编号index" category="ArcMapByCommon" image="SysImages\images\cadastralparcelnamer32.png" />
         <Button id="cwgis_ArcMapByCommon_updateFieldAddZeroPrex" class="updateFieldAddZeroPrexButton" message="自动补零前缀长度" caption="自动补零前缀长度" tip="自动补零前缀长度" category="ArcMapByCommon" image="SysImages\images\bookmarkcreate16.png" />
         <Button id="cwgis_ArcMapByCommon_OutShapeButton" class="OutShapeButton" message="输出shp文件" caption="输出shp文件" tip="输出shp文件" category="ArcMapByCommon" image="SysImages\images\editinglayerfieldorder16.png" />
@@ -56,6 +58,8 @@
             <Button refID="cwgis_ArcMapByCommon_updateSubStrButton" />
             <Button refID="cwgis_ArcMapByCommon_ComputeXZDWMJTKMJByJBNTButton" />
             <Button refID="cwgis_ArcMapByCommon_updateKCDLXS" />
+            <Button refID="cwgis_ArcMapByCommon_UpdateYsdmBatchButton"/>
+            <Button refID="cwgis_ArcMapByCommon_UpdateBsmBatchButton"/>
             <Button refID="cwgis_ArcMapByCommon_BHIndexButton" />
             <Button refID="cwgis_ArcMapByCommon_updateFieldAddZeroPrex" />            
             <Button refID="cwgis_ArcMapByCommon_OutShapeButton" />
