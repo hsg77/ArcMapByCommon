@@ -8,6 +8,9 @@ using System.Drawing;
 using ESRI.ArcGIS.Display;
 using ESRI.ArcGIS.Geometry;
 using ESRI.ArcGIS.Carto;
+using System.IO;
+using ESRI.ArcGIS.DataSourcesGDB;
+using ESRI.ArcGIS.esriSystem;
 
 namespace ArcMapByCommon
 {
@@ -633,7 +636,44 @@ namespace ArcMapByCommon
         {
             return SetDomain(sr, 0, 0, 99999999.999999, 9999999.999999);
         }
+        //
+        /// <summary>
+        /// 创建一个新的Geodatabase文件，支持mdb和gdb
+        /// </summary>
+        /// <param name="geodatabasePath"></param>
+        public static void CreateGeodatabase(string geodatabasePath)
+        {
+            IWorkspaceFactory wf = null;
+            switch (System.IO.Path.GetExtension(geodatabasePath).ToUpper())
+            {
+                case ".GDB":
+                    if (Directory.Exists(geodatabasePath))
+                        throw new Exception("路径" + geodatabasePath + "已经存在，不能创建geodatabase。");
+                    wf = new FileGDBWorkspaceFactoryClass();
+                    break;
+                case ".MDB":
+                    if (File.Exists(geodatabasePath))
+                        throw new Exception("文件" + geodatabasePath + "已经存在，不能创建geodatabase。");
+                    wf = new AccessWorkspaceFactoryClass();
+                    break;
+                default:
+                    break;
+            }
 
+            if (wf != null)
+            {
+                string text2 = geodatabasePath.Substring(0, geodatabasePath.LastIndexOf(@"\"));
+                string text1 = geodatabasePath.Substring(geodatabasePath.LastIndexOf(@"\") + 1);
+                text1 = text1.Substring(0, text1.LastIndexOf("."));
+                IPropertySet set1 = new PropertySetClass();
+                set1.SetProperty("Database", text2);
+                IWorkspaceName wn = wf.Create(text2, text1, set1, 0);
+            }
+            else
+                throw new NotSupportedException("不支持传入的文件名。");
+
+        }
+        //
         //
     }
 }

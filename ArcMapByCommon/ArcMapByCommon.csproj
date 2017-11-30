@@ -60,6 +60,9 @@
       <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="ESRI.ArcGIS.AxControls, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
     <Reference Include="ESRI.ArcGIS.Carto, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
@@ -70,6 +73,10 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
@@ -96,6 +103,13 @@
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Output, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -130,6 +144,7 @@
     <Compile Include="ADF\API\Win32StructDef.cs" />
     <Compile Include="ADF\CommonClass.cs" />
     <Compile Include="ADF\CryptoUtil.cs" />
+    <Compile Include="ADF\gdbUtil.cs" />
     <Compile Include="ADF\GlobalFunction.cs" />
     <Compile Include="ADF\ItemClass.cs" />
     <Compile Include="ADF\PolygonHelper.cs" />
@@ -189,6 +204,13 @@
     <Compile Include="ControlEx\NumericBox\NumericUpDownEx.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Data\DbConnectionWrapper.cs" />
+    <Compile Include="Data\DbConnectionWrapper_mdb.cs" />
+    <Compile Include="Data\DBParameter.cs" />
+    <Compile Include="Data\DBParameterCollection.cs" />
+    <Compile Include="Data\DbTableCols.cs" />
+    <Compile Include="Data\IDbConnectionWrapper.cs" />
+    <Compile Include="Data\mdbAccessLayerClass.cs" />
     <Compile Include="EditEx\EditingStopButton.cs" />
     <Compile Include="EditEx\frmStartEditSessionUI.cs">
       <SubType>Form</SubType>
@@ -363,6 +385,15 @@
       <DependentUpon>frmUpdateSubStrUI.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateSubStrEx\updateSubStrButton.cs" />
+    <Compile Include="UpdateValueSpatialOverlap\frmUpdateFeatureByGeoSpatialOverlapUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateValueSpatialOverlap\frmUpdateFeatureByGeoSpatialOverlapUI.Designer.cs">
+      <DependentUpon>frmUpdateFeatureByGeoSpatialOverlapUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateValueSpatialOverlap\IGeoProcessCommand.cs" />
+    <Compile Include="UpdateValueSpatialOverlap\IntersectCalculateMdb.cs" />
+    <Compile Include="UpdateValueSpatialOverlap\UpdateValueSpatialOverlapButton.cs" />
     <Compile Include="UpdateYsdmBatch\frmUpdateYsdmBatchUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -5396,6 +5427,9 @@
     <EmbeddedResource Include="UpdateSubStrEx\frmUpdateSubStrUI.resx">
       <DependentUpon>frmUpdateSubStrUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateValueSpatialOverlap\frmUpdateFeatureByGeoSpatialOverlapUI.resx">
+      <DependentUpon>frmUpdateFeatureByGeoSpatialOverlapUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateYsdmBatch\frmUpdateYsdmBatchUI.resx">
       <DependentUpon>frmUpdateYsdmBatchUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -5407,6 +5441,7 @@
     <EmbeddedResource Include="ConfigYSDM\要素代码YSDM%28两区标准图层20171031版本%29.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <Content Include="ConfigYSDM\要素代码YSDM%28基本农田2017定稿版本%29.txt" />
     <Content Include="Pads\XZQPadCommand.bmp" />
     <Content Include="readme.txt" />
   </ItemGroup>
